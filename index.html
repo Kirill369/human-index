@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+	<link rel="stylesheet" href="./assets/fa/css/all.css">
+
+	
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<script src="./assets/js/app.js"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+	<title>Калькулятор индекса массы тела</title>
+
+</head>
+
+<body>
+
+	<div class="container mt-5">
+
+		<h1 class="mb-4">Индекс массы тела</h1>
+
+		
+		<div class=' row-cols-1 row-cols-lg-4 my-4'>
+			<p>
+			<div class="form-group">
+				<label for="heightInput">Ваш рост( м.):</label>
+				<input type="number" class="form-control" id="heightInput" min="0.5" max="2.72" value="0">
+			</div>
+			</p>
+
+			<p>
+			<div class="form-group">
+				<label for="weightInput">Ваш вес( кг.):</label>
+				<input type="number" class="form-control" id="weightInput" min="1" max="635" value="0">
+			</div>
+			</p>
+		</div>
+
+		<button onclick="calc()" class="btn btn-danger w-25">Рассчитать</button>
+
+		
+
+		<h2 class='my-2'>Ваш индекс: <output id="resultPlace">-</output></h2>
+
+		<h3>Он означает: <output id="resultPlace2">-</output></h3>
+
+	</div>
+
+</body>
+
+</html>
